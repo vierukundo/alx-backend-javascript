@@ -13,5 +13,8 @@ export default function createInt8TypedArray(length, position, value) {
   // Set the value at the specified position
   int8Array[position] = value;
 
-  return buffer;
+  // Create a DataView using the ArrayBuffer
+  const dataView = new DataView(buffer);
+
+  return dataView;
 }
