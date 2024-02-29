@@ -15,11 +15,11 @@ describe('calculateNumber', () => {
   });
 
   it('should handle division by zero and return an error', () => {
-    assert.strictEqual(calculateNumber('DIVIDE', 1.4, 0), 'Error: Division by zero');
+    assert.strictEqual(calculateNumber('DIVIDE', 1.4, 0), 'Error');
   });
 
   it('should handle invalid operation type and return an error', () => {
-    assert.strictEqual(calculateNumber('INVALID', 1.4, 4.5), 'Invalid operation type');
+    assert.strictEqual(calculateNumber('INVALID', 1.4, 4.5), 'Error');
   });
 
   it('should handle negative numbers', () => {

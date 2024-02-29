@@ -11,11 +11,11 @@ function calculateNumber(type, a, b) {
     } else if (type === 'DIVIDE') {
       const roundedB = Math.round(b);
       if (roundedB === 0) {
-        throw new Error('Error: Division by zero');
+        throw new Error('Error');
       }
       result = Math.round(a) / roundedB;
     } else {
-      throw new Error('Invalid operation type');
+      throw new Error('Error');
     }
   } catch (error) {
     result = error.message;
