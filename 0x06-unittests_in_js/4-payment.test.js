@@ -1,5 +1,4 @@
 // 4-payment.test.js
-const { expect } = require('chai');
 const sinon = require('sinon');
 const sendPaymentRequestToApi = require('./4-payment');  // Update to 4-payment.js
 const Utils = require('./utils');
